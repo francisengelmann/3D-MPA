@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>3D-MPA: Multi Proposal Aggregation for 3D Semantic Instance Segmentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./w3.css">
+</head>
+
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s6">
+      <a href="#video" class="w3-button w3-block w3-black">Video</a>
+    </div>
+    <div class="w3-col s6">
+      <a href="#publication" class="w3-button w3-block w3-black">Publication</a>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+
+<h3 align="center" id="title">3D-MPA: Multi Proposal Aggregation for 3D Semantic Instance Segmentation</h3>
+<h4 align="center" id="title">CVPR 2020</h4>
+  <p align="center" class="center_text" id="authors">
+    <a target="_blank" href="http://francisengelmann.github.com/">Francis Engelmann</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="https://www.vision.rwth-aachen.de/person/15/">Martin Bokeloh</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="http://ai.stanford.edu/~alireza/">Alireza Fathi</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="https://www.vision.rwth-aachen.de/person/1/">Bastian Leibe</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="https://www.niessnerlab.org/members/matthias_niessner/profile.html">Matthias Nie&szlig;ner</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  </ul>
+  </p>
+
+  <p class="center_text" align="center">
+    RWTH Aachen University &nbsp; &nbsp; &nbsp; Google &nbsp; &nbsp; &nbsp; Technical University of Munich
+  </p>
+<br>
+</span>
+<div class="w3-container" id="paper">
+  <div class="w3-content" style="max-width:850px">
+    <br><center><img src="teaser.png" style="max-width:100%" /></center><br>
+    <p>
+      We present 3D-MPA, a method for instance segmentation on 3D point clouds.
+      Given an input point cloud, we propose an object-centric approach where each point votes for its object center.
+      We sample object proposals from the predicted object centers.
+      Then, we learn proposal features from grouped point features that voted for the same object center.
+      A graph convolutional network introduces inter-proposal relations, providing higher-level feature learning in addition to the lower-level point features.
+      Each proposal comprises a semantic label, a set of associated points over which we define a foreground-background mask, an objectness score and aggregation features.
+      Previous works usually perform non-maximum-suppression (NMS) over proposals to obtain the final object detections or semantic instances.
+      However, NMS can discard potentially correct predictions.
+      Instead, our approach keeps all proposals and groups them together based on the learned aggregation features.
+      We show that grouping proposals improves over NMS and outperforms previous state-of-the-art methods on the tasks of 3D object detection and semantic instance segmentation on the ScanNetV2 benchmark and the S3DIS dataset.
+    </p>
+
+    <h3 class="w3-left-align"><b>Video</b></h3>
+    <iframe width="100%" height="480px" src="https://www.youtube.com/embed/ifL8yTbRFDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h3 class="w3-left-align"><b>Publication</b></h3>
+    <a href="engelmann_cvpr2020_3D-MPA.pdf">Paper</a> Conference on Computer Vision and Pattern Recognition (CVPR 2020)<br>
+    <pre class="w3-panel w3-leftbar w3-light-grey" style="white-space: pre-wrap; font-family: monospace; font-size: 12px">
+@inproceedings{Engelmann20CVPR,
+  title = {{3D-MPA: Multi Proposal Aggregation for 3D Semantic Instance Segmentation}},
+  author = {Engelmann, Francis and Bokeloh, Martin and Fathi, Alireza and Leibe, Bastian and Nie{\ss}ner, Matthias},
+  booktitle = {{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}},
+  year = {2020}
+}</pre>
+  </div>
+
+
+</div>
+
+<br><br><br>
+
+
+
+</body>
+</html>
