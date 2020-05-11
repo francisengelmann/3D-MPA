@@ -9,7 +9,7 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020.
 
 ### BibTeX
 
-```js
+```
 @inproceedings{Engelmann20CVPR,
   title = {{3D-MPA: Multi Proposal Aggregation for 3D Semantic Instance Segmentation}},
   author = {Engelmann, Francis and Bokeloh, Martin and Fathi, Alireza and Leibe, Bastian and Nie{\ss}ner, Matthias},
