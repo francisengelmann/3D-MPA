@@ -30,6 +30,18 @@
     transition: opacity .6s ease;
     border: 1.5px solid gray;
   }
+
+  .sem-label {
+    margin-top: 2px;
+    margin-bottom: -2px;
+    margin-left: -2px;
+    margin-right: 5px;
+    min-width: 15px;
+    min-height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 0.5px solid black;
+  }
   </style>
 </head>
 
@@ -97,9 +109,8 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner"  role="listbox">
+      <div class="carousel-inner" role="listbox">
         <iframe class="carousel-item active" width="100%" height="480px" src="https://omnomnom.vision.rwth-aachen.de/data/3D_MPA_scannet_test_scenes/scene0793_00/" style="border: 1px solid gray" ></iframe>
-
         <iframe class="carousel-item" width="100%" height="480px" src="https://omnomnom.vision.rwth-aachen.de/data/3D_MPA_scannet_test_scenes/scene0747_00/" style="border: 1px solid gray" allowfullscreen></iframe>
         <iframe class="carousel-item" width="100%" height="480px" src="https://omnomnom.vision.rwth-aachen.de/data/3D_MPA_scannet_test_scenes/scene0708_00/" style="border: 1px solid gray" allowfullscreen></iframe>
 
@@ -113,6 +124,32 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+
+    <div align='center'>
+      <div>
+        <b>Object semantics:</b>
+        Cabinet         <span class="sem-label" style="background-color: rgb(38, 121, 178)"></span>
+        Bed             <span class="sem-label" style="background-color: rgb(254, 188, 125)"></span>
+        Chair           <span class="sem-label" style="background-color: rgb(188, 188, 53)"></span>
+        Sofa            <span class="sem-label" style="background-color: rgb(139, 86, 76)"></span>
+        Table           <span class="sem-label" style="background-color: rgb(253, 153, 153)"></span>
+        Door            <span class="sem-label" style="background-color: rgb(211, 42, 47)"></span>
+        Window          <span class="sem-label" style="background-color: rgb(197, 177, 212)"></span>
+        Bookshelf       <span class="sem-label" style="background-color: rgb(148, 106, 186)"></span>
+        Picture         <span class="sem-label" style="background-color: rgb(195, 156, 149)"></span>
+        Counter         <span class="sem-label" style="background-color: rgb(41, 190, 207)"></span>
+        Desk            <span class="sem-label" style="background-color: rgb(246, 184, 210)"></span>
+        Curtain         <span class="sem-label" style="background-color: rgb(218, 218, 145)"></span>
+        Refrigerator    <span class="sem-label" style="background-color: rgb(252, 127, 40)"></span>
+        Bathtub         <span class="sem-label" style="background-color: rgb(225, 122, 193)"></span>
+        Shower curtain  <span class="sem-label" style="background-color: rgb(160, 218, 228)"></span>
+        Toilet          <span class="sem-label" style="background-color: rgb(50, 159, 53)"></span>
+        Sink            <span class="sem-label" style="background-color: rgb(113, 128, 144)"></span>
+        Other furniture <span class="sem-label" style="background-color: rgb(83, 85, 161)"></span>
+      </div>
+      <div><b>Object instances:</b> Different colors represent different instances.</div>
+    </div>
+
 
     <h3 class="w3-left-align" id="video"><b>Video</b></h3>
     <iframe width="100%" height="480px" src="https://www.youtube.com/embed/ifL8yTbRFDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
