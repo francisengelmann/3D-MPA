@@ -11,6 +11,11 @@ While we prepare the code release, have a look at the interactive demo on our pr
 - [Project Page](https://francisengelmann.github.io/3D-MPA/)
 - [YouTube Video](https://www.youtube.com/watch?v=ifL8yTbRFDk&feature=emb_logo)
 
+## Predictions on ScanNet
+
+We provide the predictions of 3D-MPA over all three ScanNet splits: [3D-MPA ScanNet Predictions](https://omnomnom.vision.rwth-aachen.de/data/3d_mpa/scannet_predictions_3d_mpa.zip)  
+The format of the predictions is the same as used for evaluation on the ScanNet online benchmark.
+
 ## Citation
 If you find our work useful in your research, please consider citing:
 ```
